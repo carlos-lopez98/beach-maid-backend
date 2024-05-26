@@ -1,6 +1,6 @@
 package com.demo.seamaidproject.controller;
 
-import com.demo.seamaidproject.models.CalendarEvent;
+import com.demo.seamaidproject.model.CalendarEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

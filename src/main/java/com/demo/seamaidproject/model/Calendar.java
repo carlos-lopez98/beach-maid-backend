@@ -1,4 +1,4 @@
-package com.demo.seamaidproject.models;
+package com.demo.seamaidproject.model;
 
 public class Calendar {
 
