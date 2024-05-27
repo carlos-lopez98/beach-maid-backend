@@ -5,28 +5,27 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 
+import java.sql.Date;
+
 @Entity
 @Data
 @Table(name = "calendar")
 public class Calendar {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name= "id")
-    private int calendarId;
+    @Column(name= "date")
+    private Date date;
 
     @Column(name = "AMSlot")
     private TimeSlot AMSlot;
     @Column(name = "PMSlot")
     private TimeSlot PMSlot;
 
-    public int getCalendarId() {
-        return calendarId;
+    public Date getDate() {
+        return date;
     }
 
-    public void setCalendarId(int calendarId) {
-        this.calendarId = calendarId;
-    }
+    public void setDate(Date date) {this.date = date}
 
     public TimeSlot getAM() {
         return AMSlot;
